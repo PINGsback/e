@@ -1,0 +1,15 @@
+[Unit]
+Description=imagine
+
+[Service]
+WorkingDirectory=/home/pingsback/e
+ExecStart=/home/pingsback/e/main.py
+RemainAfterExit=no
+User=ethingrunner
+Group=root
+Restart=always
+RestartSec=140
+Environment="DISPLAY=:0"
+
+[Install]
+WantedBy=multi-user.target
